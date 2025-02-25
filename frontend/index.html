@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header" class="header">
+        <div>
+            <ul id="navbar" class="header">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="homepage">
+        <h4>Precision engineering meets Luxury</h4>
+        <h2>Drive the future</h2>
+        <h1>Sleek. Powerful. Yours.</h1>
+        <p>Discover a range of cars from modern marvels to vintage classics.</p>
+    </section>
+
+    <section id="explore" class="section-p1">
+        <h2>Discover Iconic Cars: Legends on Wheels</h2>
+        <p>Discover the most iconic and innovative vehicles that have shaped the 
+                automotive world. From classic muscle cars to cutting-edge electric vehicles, 
+                dive into the stories and engineering marvels behind these legends on wheels.</p>
+        
+        <div class="full-img" id="fullimgbox">
+            <img src="" alt="" id="fullimg">
+            <span onclick="closeFullImg()">close</span>
+        </div>
+        <div class="parent-container">
+            <div class="cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="https://images.pexels.com/photos/544542/pexels-photo-544542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                <div class="description">
+                    <span>brand</span>
+                    <h5>Car model</h5>
+                </div>
+            </div>
+            <div class="cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="https://images.pexels.com/photos/2127732/pexels-photo-2127732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                <div class="description">
+                    <span>brand</span>
+                    <h5>Car model</h5>
+                </div>
+            </div>
+            <div class="cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="https://images.pexels.com/photos/3065602/pexels-photo-3065602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                <div class="description">
+                    <span>brand</span>
+                    <h5>Car model</h5>
+                </div>
+            </div>
+            <div class="cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="https://images.pexels.com/photos/18038889/pexels-photo-18038889/free-photo-of-car-on-parking-lot.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                <div class="description">
+                    <span>brand</span>
+                    <h5>Car model</h5>
+                </div>
+            </div>
+            <div class="cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="https://images.pexels.com/photos/18003060/pexels-photo-18003060/free-photo-of-a-yellow-corvette-parked-on-the-street-in-front-of-a-building.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                <div class="description">
+                    <span>brand</span>
+                    <h5>Car model</h5>
+                </div>
+            </div>
+            <div class="cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="https://images.pexels.com/photos/22815218/pexels-photo-22815218/free-photo-of-black-old-fashioned-car.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                <div class="description">
+                    <span>brand</span>
+                    <h5>Car model</h5>
+                </div>
+            </div>
+            <div class="cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="https://images.pexels.com/photos/9334968/pexels-photo-9334968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                <div class="description">
+                    <span>brand</span>
+                    <h5>Car model</h5>
+                </div>
+            </div>
+            <div class="cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="https://images.pexels.com/photos/12152940/pexels-photo-12152940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                <div class="description">
+                    <span>brand</span>
+                    <h5>Car model</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    background: white;
+}
+
+.section-p1 {
+    margin: 40px 0;
+} 
+
+/* HEADER/NAVIGATION BAR */
+#header {
+    background: rgb(253, 253, 253);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(128, 41, 41);
+    padding: 15px;
+}
+
+#navbar li a:hover {
+    background-color: rgb(227, 227, 227);
+    /*text-shadow: 1px 1px 10px rgb(128, 41, 41);*/
+}
+
+/*HOME PAGE*/
+#homepage {
+    background-image: url("img/homecarcopy.png");
+    height: 90vh;
+    width: 100%;
+    background-size: contain;
+    background-position: right 0;
+    background-repeat: no-repeat;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#homepage h4 {
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: rgb(58, 58, 58);
+}
+
+#homepage h2 {
+    font-size: 40px;
+    color: rgb(58, 58, 58);
+}
+
+#homepage h1 {
+    font-size: 50px;
+    padding-bottom: 15px;
+    color: rgb(186, 3, 3);
+}
+
+#homepage p {
+    color: rgb(89, 88, 88);
+}
+
+/*EXPLORE*/
+
+#explore::before {
+    content: "";
+    display: block;
+    height: 40px;
+}
+
+#explore {
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+}
+
+#explore h2 {
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+#explore p {
+    font-size: 15px;
+    color: gray;
+    line-height: 1.5;
+    padding: 0px 100px;
+    padding-bottom: 20px;
+}
+
+#explore .parent-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    padding: 0px 80px;
+    gap: 0px 15px;
+}
+
+#explore .cars {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 15px;
+    border: 1px solid #e7cccc;
+    border-radius: 25px;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+
+#explore .cars:hover {
+    background-color: lightgray;
+}
+
+#explore .cars img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+#explore .cars .description {
+    text-align: start;
+    padding: 10px 0px;
+}
+
+#explore .cars .description span {
+    color: darkgray;
+    font-size: 12px;
+}
+
+#explore .cars .description h5 {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+/*EXPLORE - view full picture*/
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    background-size: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.full-img img {
+    width: 90%;
+    max-width: 500px;
+}
+
+.full-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 15px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.full-img span:hover {
+    color: rgb(193, 193, 193);
+}
